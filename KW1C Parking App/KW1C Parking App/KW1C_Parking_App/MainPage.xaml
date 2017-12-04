@@ -8,15 +8,6 @@
 
 	<Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center">
-        </Label>
-
-
-    <!--<Button Text="Beschikbare Pakeerplaatsen" HeightRequest="10" WidthRequest="25"></Button>-->
-
-
-
-
-
+           HorizontalOptions="Center" /> hoi
 
 </ContentPage>
