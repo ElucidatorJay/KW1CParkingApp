@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "KW1C_Parking_App", "KW1C Parking App\KW1C_Parking_App\KW1C_Parking_App.shproj", "{A9928F6B-6973-4473-ACDE-A77B791D1376}"
 EndProject
@@ -14,6 +14,7 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		KW1C Parking App\KW1C_Parking_App\KW1C_Parking_App.projitems*{8c74be01-3005-42aa-96f6-22aeeac8dabe}*SharedItemsImports = 4
+		KW1C Parking App\KW1C_Parking_App\KW1C_Parking_App.projitems*{a098e3ba-a4d1-4cd7-ab24-1cd47346a311}*SharedItemsImports = 4
 		KW1C Parking App\KW1C_Parking_App\KW1C_Parking_App.projitems*{a839f829-16c6-4467-8045-7707ecd44e57}*SharedItemsImports = 4
 		KW1C Parking App\KW1C_Parking_App\KW1C_Parking_App.projitems*{a9928f6b-6973-4473-acde-a77b791d1376}*SharedItemsImports = 13
 	EndGlobalSection

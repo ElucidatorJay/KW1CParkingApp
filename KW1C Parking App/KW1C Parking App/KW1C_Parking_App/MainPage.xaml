@@ -4,9 +4,8 @@
              xmlns:local="clr-namespace:KW1C_Parking_App"
              x:Class="KW1C_Parking_App.MainPage"
              BackgroundColor="#1B84C5">
-    
 
-	<Label Text="Welcome to Xamarin Forms!" 
+    <Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 
