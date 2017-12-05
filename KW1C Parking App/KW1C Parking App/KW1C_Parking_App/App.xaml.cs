@@ -13,7 +13,7 @@ namespace KW1C_Parking_App
 		{
 			InitializeComponent();
 
-			MainPage = new KW1C_Parking_App.MainPage();
+            MainPage = new KW1C_Parking_App.HomePage();
 		}
 
 		protected override void OnStart ()

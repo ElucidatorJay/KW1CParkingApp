@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KW1C_Parking_App.HomePage"
+             BackgroundColor="#1B84C5">
+             
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="KW1C.jpg" HeightRequest="250" WidthRequest="300"></Image>
+            <Button Text="Beschikbare Pakeerplaatsen" HeightRequest="60" WidthRequest="125"></Button>
+            <Button Text="Zoek mijn auto" HeightRequest="60" WidthRequest="125"></Button>
+            <Button Text="Openingstijden" HeightRequest="60" WidthRequest="125"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
