@@ -7,6 +7,6 @@
 
     <Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center" /> hoi
+           HorizontalOptions="Center" />
 
 </ContentPage>
