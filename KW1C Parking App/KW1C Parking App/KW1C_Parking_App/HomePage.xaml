@@ -5,11 +5,11 @@
              BackgroundColor="#1B84C5">
              
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout WidthRequest="400">
             <Image Source="KW1C.jpg" HeightRequest="250" WidthRequest="300"></Image>
-            <Button Text="Beschikbare Pakeerplaatsen" HeightRequest="60" WidthRequest="125"></Button>
-            <Button Text="Zoek mijn auto" HeightRequest="60" WidthRequest="125"></Button>
-            <Button Text="Openingstijden" HeightRequest="60" WidthRequest="125"></Button>
+            <Button Text="Beschikbare Pakeerplaatsen" HeightRequest="60" WidthRequest="100"></Button>
+            <Button Text="Zoek mijn auto" HeightRequest="60" WidthRequest="75" Clicked="OpenZoekAuto"></Button>
+            <Button Text="Openingstijden" HeightRequest="60" WidthRequest="75" Clicked="OpenTijden"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

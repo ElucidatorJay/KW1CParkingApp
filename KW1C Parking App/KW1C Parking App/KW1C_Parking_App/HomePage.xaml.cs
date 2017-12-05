@@ -16,5 +16,17 @@ namespace KW1C_Parking_App
 		{
 			InitializeComponent ();
 		}
-	}
+        private void OpenTijden(object sender, EventArgs e)
+        {
+            //Resultaatscherm wordt geopend met de feedback data
+            Navigation.PushModalAsync(new Openingstijden());
+            
+        }
+        private void OpenZoekAuto(object sender, EventArgs e)
+        {
+            //Resultaatscherm wordt geopend met de feedback data
+            Navigation.PushModalAsync(new ZoekMijnAuto());
+        
+        }
+    }
 }
