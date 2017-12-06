@@ -28,7 +28,7 @@ namespace KW1C_Parking_App
         {
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 20;
-            TimeSpan ts = TimeSpan.FromTicks(10000000000);
+            TimeSpan ts = TimeSpan.FromTicks(100000);
             var position = await locator.GetPositionAsync(ts);
 
             txtLat.Text = "Latitude: " + position.Latitude.ToString();
