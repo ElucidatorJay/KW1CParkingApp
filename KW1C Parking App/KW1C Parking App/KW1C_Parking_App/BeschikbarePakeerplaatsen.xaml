@@ -6,8 +6,14 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Locaties:" TextColor="White" />
-            <Picker></Picker>
+            <Image Source="KW1C.jpg" HeightRequest="250" WidthRequest="300"></Image>
+            <Picker Title="Selecteer een locatie">
+                <Picker.Items>
+                    <x:String>Onderwijsboulevard</x:String>
+                    <x:String>Vlijmenseweg</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label TextColor="White" FontSize = "65" Text="000"></Label>
         </StackLayout>
     </ContentPage.Content>
     
