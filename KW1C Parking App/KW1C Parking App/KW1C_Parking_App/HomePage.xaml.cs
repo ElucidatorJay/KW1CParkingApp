@@ -28,5 +28,11 @@ namespace KW1C_Parking_App
             Navigation.PushModalAsync(new ZoekMijnAuto());
         
         }
+        private void OpenParkeerplaatsen(object sender, EventArgs e)
+        {
+            //Resultaatscherm wordt geopend met de feedback data
+            Navigation.PushModalAsync(new BeschikbarePakeerplaatsen());
+
+        }
     }
 }
