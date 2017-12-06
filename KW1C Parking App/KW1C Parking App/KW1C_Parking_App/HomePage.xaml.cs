@@ -14,7 +14,7 @@ namespace KW1C_Parking_App
 	{
 		public HomePage ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
         private void OpenParkeerplaatsen(object sender, EventArgs e)
         {
