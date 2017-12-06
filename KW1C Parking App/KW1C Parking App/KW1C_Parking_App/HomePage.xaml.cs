@@ -16,6 +16,10 @@ namespace KW1C_Parking_App
 		{
 			InitializeComponent ();
 		}
+        private void OpenParkeerplaatsen(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new BeschikbareParkeerplaatsen());
+        }
         private void OpenTijden(object sender, EventArgs e)
         {
             //Resultaatscherm wordt geopend met de feedback data

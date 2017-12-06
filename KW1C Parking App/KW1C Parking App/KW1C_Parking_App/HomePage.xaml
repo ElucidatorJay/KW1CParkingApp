@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout WidthRequest="400">
             <Image Source="KW1C.jpg" HeightRequest="250" WidthRequest="300"></Image>
-            <Button Text="Beschikbare Pakeerplaatsen" HeightRequest="60" WidthRequest="100"></Button>
+            <Button Text="Beschikbare Pakeerplaatsen" HeightRequest="60" WidthRequest="100" Clicked="OpenParkeerplaatsen"></Button>
             <Button Text="Zoek mijn auto" HeightRequest="60" WidthRequest="75" Clicked="OpenZoekAuto"></Button>
             <Button Text="Openingstijden" HeightRequest="60" WidthRequest="75" Clicked="OpenTijden"></Button>
         </StackLayout>
