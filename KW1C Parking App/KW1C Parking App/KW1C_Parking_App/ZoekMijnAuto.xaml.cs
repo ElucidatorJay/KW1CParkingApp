@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
+using Plugin.Geolocator;
 
 namespace KW1C_Parking_App
 {
@@ -15,6 +17,25 @@ namespace KW1C_Parking_App
 		public ZoekMijnAuto ()
 		{
 			InitializeComponent ();
-		}
-	}
+            btnGetLocation.Clicked += BtnGetLocation_Clicked;
+        }
+        private async void BtnGetLocation_Clicked(object sender, EventArgs e)
+        {
+            await RetreiveLocation();
+        }
+
+        private async Task RetreiveLocation()
+        {
+            var locator = CrossGeolocator.Current;
+            locator.DesiredAccuracy = 20;
+            TimeSpan ts = TimeSpan.FromTicks(10000000000);
+            var position = await locator.GetPositionAsync(ts);
+
+            txtLat.Text = "Latitude: " + position.Latitude.ToString();
+            txtLong.Text = "Longitude: " + position.Longitude.ToString();
+
+            MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude)
+                             , Distance.FromMiles(1)));
+        }
+    }
 }
