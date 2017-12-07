@@ -17,7 +17,8 @@ namespace KW1C_Parking_App
 		public ZoekMijnAuto ()
 		{
 			InitializeComponent ();
-            btnGetLocation.Clicked += BtnGetLocation_Clicked;
+            RetreiveLocation();
+           
         }
         private async void BtnGetLocation_Clicked(object sender, EventArgs e)
         {
