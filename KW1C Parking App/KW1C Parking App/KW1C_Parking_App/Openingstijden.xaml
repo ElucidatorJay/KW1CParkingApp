@@ -14,11 +14,11 @@
                 </Picker.Items>
             </Picker>
             <Label Text="Openingstijden:" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
-            <Label Text="Maandag    7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
+            <Label Text="Maandag     7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
             <Label Text="Dinsdag     7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
-            <Label Text="Woensdag   7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
-            <Label Text="Donderdag  7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
-            <Label Text="Vrijdag       7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
+            <Label Text="Woensdag    7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
+            <Label Text="Donderdag   7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
+            <Label Text="Vrijdag     7:30  -  21:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
             <Label Text="Zaterdag    12:00 -  19:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
             <Label Text="Zondag      Gesloten" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
         </StackLayout>
