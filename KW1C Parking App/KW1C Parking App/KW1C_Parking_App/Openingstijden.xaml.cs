@@ -15,6 +15,7 @@ namespace KW1C_Parking_App
 		public Openingstijden ()
 		{
 			InitializeComponent ();
-		}
+            piLocatie.TextColor = Color.White;
+        }
 	}
 }

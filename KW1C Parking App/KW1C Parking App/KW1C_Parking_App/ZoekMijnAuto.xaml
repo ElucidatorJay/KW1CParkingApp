@@ -17,6 +17,7 @@
          x:Name="MyMap"
          IsShowingUser="True"
          MapType="Hybrid"
+
          
        />
         </StackLayout>

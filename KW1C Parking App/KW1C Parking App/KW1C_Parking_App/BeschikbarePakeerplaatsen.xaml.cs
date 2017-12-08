@@ -15,6 +15,7 @@ namespace KW1C_Parking_App
 		public BeschikbarePakeerplaatsen ()
 		{
 			InitializeComponent ();
+            piLocatie.TextColor = Color.White;
+            
 		}
-	}
-}
+	}}
