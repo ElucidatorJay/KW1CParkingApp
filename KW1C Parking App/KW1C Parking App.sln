@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KW1C_Parking_App.iOS", "KW1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KW1C_Parking_App.UWP", "KW1C Parking App\KW1C_Parking_App.UWP\KW1C_Parking_App.UWP.csproj", "{A098E3BA-A4D1-4CD7-AB24-1CD47346A311}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34B98EAE-F6D9-4BC3-BDCD-25663CCEBE9E}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		KW1C Parking App\KW1C_Parking_App\KW1C_Parking_App.projitems*{8c74be01-3005-42aa-96f6-22aeeac8dabe}*SharedItemsImports = 4
