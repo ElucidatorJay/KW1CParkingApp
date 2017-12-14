@@ -16,7 +16,21 @@ namespace KW1C_Parking_App
             MainPage = new KW1C_Parking_App.HomePage();
 		}
 
-		protected override void OnStart ()
+        static ZoekAutoDB db;
+
+        public static ZoekAutoDB Db
+        {
+            get
+            {
+                if (db == null)
+                {
+                    db = new ZoekAutoDB();
+                }
+                return db;
+            }
+        }
+
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

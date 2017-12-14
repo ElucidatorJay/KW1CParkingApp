@@ -16,10 +16,12 @@
       <DependentUpon>BeschikbarePakeerplaatsen.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)clLocatie.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ISQLite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -27,6 +29,7 @@
       <DependentUpon>Openingstijden.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ZoekAutoDB.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ZoekMijnAuto.xaml.cs">
       <DependentUpon>ZoekMijnAuto.xaml</DependentUpon>
       <SubType>Code</SubType>

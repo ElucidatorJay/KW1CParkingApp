@@ -22,6 +22,7 @@
             <Label Text="Zaterdag    12:00 -  19:00" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
             <Label Text="Zondag      Gesloten" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Start"></Label>
         </StackLayout>
-        
+
+
     </ContentPage.Content>
 </ContentPage>

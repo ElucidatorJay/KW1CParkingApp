@@ -25,7 +25,11 @@
         <StackLayout Grid.Row="1">
             <Label x:Name="txtLat" Text="Latitude: " VerticalOptions="Center" HorizontalOptions="Center"></Label>
             <Label x:Name="txtLong" Text="Longitude: " VerticalOptions="Center" HorizontalOptions="Center"></Label>
-            <Button x:Name="btnGetLocation" Text="Get Current Location"></Button>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Button x:Name="btnGetLocation" Text="Verwijder locatie" Clicked="btnGetLocation_Clicked"></Button>
+            <Button x:Name="btnSavetLocation" Text="Opslaan Locatie" Clicked="btnSavetLocation_Clicked"></Button>
+            
         </StackLayout>
 
     </Grid>
