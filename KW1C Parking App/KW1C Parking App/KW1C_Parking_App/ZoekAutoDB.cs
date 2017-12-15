@@ -35,17 +35,26 @@ namespace KW1C_Parking_App
             }
         }
 
-        public int SaveItem(clLocatie item)
+        public int GetAantalTabel(string tabel)
         {
             lock (locker)
             {
-                if (item.ID != 0)
+                return dbconn.ExecuteScalar<int>("SELECT COUNT(*) FROM [" + tabel + "]");
+            }
+        }
+
+        public int SaveItem(clLocatie item)
+        {
+            lock (locker)
+            {   
+                if (item.ID == 1 )
                 {
                     dbconn.Update(item);
                     return item.ID;
                 }
                 else
                 {
+                    item.ID = 1;
                     return dbconn.Insert(item);
                 }
             }

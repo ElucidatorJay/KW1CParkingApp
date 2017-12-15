@@ -11,9 +11,9 @@ namespace KW1C_Parking_App
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ZoekMijnAuto : ContentPage
 	{
-        clLocatie Location = new clLocatie();
-
-
+       // clLocatie Location = new clLocatie();
+        private string Longitude;
+        private string Latitude;
 
         public ZoekMijnAuto ()
 		{
@@ -24,22 +24,31 @@ namespace KW1C_Parking_App
         }
         private async void btnGetLocation_Clicked(object sender, EventArgs e)
         {
-            await RetreiveLocation();
+            App.Db.DeleteItem(1);
+            MyMap.Pins.Clear();
 
         }
 
-        private void btnSavetLocation_Clicked(object sender, EventArgs e)
+        private async void btnSavetLocation_Clicked(object sender, EventArgs e)
         {
+            await RetreiveLocation();
+
+            var Location = new clLocatie()
+            {
+                Longitude = Longitude,
+                Latitude = Latitude,
+            };
+
 
             App.Db.SaveItem(Location);
 
-            //var pin = new Pin()
-            //{
-            //    Position = new Position(Convert.ToDouble(Location.Latitude), Convert.ToDouble(Location.Longitude)),
-            //    Label = "Geparkeerde Auto"
-            //};
-            
-            //MyMap.Pins.Add(pin);
+            var pin = new Pin()
+            {
+                Position = new Position(Convert.ToDouble(Location.Latitude), Convert.ToDouble(Location.Longitude)),
+                Label = "Geparkeerde Auto"
+            };
+
+            MyMap.Pins.Add(pin);
         }
 
         private async Task RetreiveLocation()
@@ -53,8 +62,9 @@ namespace KW1C_Parking_App
             txtLong.Text = "Longitude: " + position.Longitude.ToString();
 
            
-            Location.Longitude = position.Longitude.ToString();
-            Location.Latitude = position.Latitude.ToString();
+           Longitude = position.Longitude.ToString();
+          Latitude = position.Latitude.ToString();
+            
 
 
 
@@ -64,19 +74,22 @@ namespace KW1C_Parking_App
 
         private void PinLocation()
         {
-            Location = App.Db.GetItem(1);
 
-            if(Location != null)
+            int test = App.Db.GetAantalTabel("clLocatie");
+            clLocatie locatie2 = new clLocatie();
+            locatie2 = App.Db.GetItem(1);
+
+            if (locatie2 != null)
             {
                 var pin = new Pin()
                 {
-                    Position = new Position(Convert.ToDouble(Location.Latitude), Convert.ToDouble(Location.Longitude)),
+                    Position = new Position(Convert.ToDouble(locatie2.Latitude), Convert.ToDouble(locatie2.Longitude)),
                     Label = "Geparkeerde Auto"
                 };
 
                 MyMap.Pins.Add(pin);
 
-                MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(Convert.ToDouble(Location.Latitude), Convert.ToDouble(Location.Longitude))
+                MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(Convert.ToDouble(locatie2.Latitude), Convert.ToDouble(locatie2.Longitude))
                              , Distance.FromMiles(0.1)));
 
             }

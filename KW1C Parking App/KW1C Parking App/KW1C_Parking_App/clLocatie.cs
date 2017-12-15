@@ -7,27 +7,10 @@ namespace KW1C_Parking_App
 {
    public class clLocatie
     {
-        private int _ID;
-        private string _Longitude;
-        private string _Latitude;
-        [PrimaryKey, AutoIncrement]
-        public int ID
-        {
-            get { return _ID; }
+        [PrimaryKey]
 
-            set { _ID = value; }
-        }
-        public string Longitude
-        {
-            get { return _Longitude; }
-
-            set { _Longitude = value; }
-        }
-        public string Latitude
-        {
-            get { return _Latitude; }
-            set { _Latitude = value; }
-        }
-
+        public int ID { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
     }
 }
