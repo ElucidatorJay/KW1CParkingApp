@@ -7,15 +7,15 @@
     <ContentPage.Content>
         <StackLayout>
             <Image Source="KW1C.jpg" HeightRequest="200" WidthRequest="250"></Image>
-            <Picker Title="Selecteer een locatie"  x:Name="piLocatie">
+            <Picker Title="Selecteer een locatie"  x:Name="piLocatie" SelectedIndexChanged="piLocatie_SelectedIndexChanged">
                 <Picker.Items>
                     <x:String>Onderwijsboulevard</x:String>
                     <x:String>Vlijmenseweg</x:String>
                 </Picker.Items>
             </Picker>
-            <Label TextColor="White" FontAttributes="Bold" FontSize = "120" Text="126" HorizontalTextAlignment="Center"></Label>
-            <Label Text="Beschikbare parkeerplaatsen" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"></Label>
-            <Image Source="transport.png" HeightRequest="225" WidthRequest="275"></Image>
+            <Label x:Name="lbAantal" TextColor="White" FontAttributes="Bold" FontSize = "120" Text="" HorizontalTextAlignment="Center"></Label>
+            <Label x:Name="lbText" Text="Beschikbare parkeerplaatsen" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"></Label>
+            <Image x:Name="ftAuto" Source="transport.png" HeightRequest="225" WidthRequest="275"></Image>
         </StackLayout>
     </ContentPage.Content>
     

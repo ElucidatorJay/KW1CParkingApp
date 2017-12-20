@@ -102,10 +102,7 @@ namespace KW1C_Parking_App
 
         }
 
-        private void DeletePosition()
-        {
-            App.Db.DeleteItem(1);
-        }
+        
 
 
     }

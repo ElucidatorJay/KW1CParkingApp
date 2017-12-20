@@ -7,13 +7,13 @@
     <ContentPage.Content>
         <StackLayout>
             <Image Source="KW1C.jpg" HeightRequest="200" WidthRequest="250"></Image>
-            <Picker Title="Selecteer een locatie" x:Name="piLocatie">
+            <Picker Title="Selecteer een locatie" x:Name="piLocatie" SelectedIndexChanged="grTijd_SelectedIndexChanged">
                 <Picker.Items>
                     <x:String>Onderwijsboulevard</x:String>
                     <x:String>Vlijmenseweg</x:String>
                 </Picker.Items>
             </Picker>
-            <Grid>
+            <Grid Margin="10" x:Name="grTijd">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="30"/>
@@ -34,22 +34,22 @@
                 </Grid.ColumnDefinitions>
                 <!--Maandag-->
                 <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"  >Maandag</Label>
-                <Label TextColor="White" FontSize="Large" Grid.Row="0" Grid.Column="1"  >08:00 tot 17:00</Label>
+                <Label x:Name="tdMaandag" TextColor="White" FontSize="Large" Grid.Row="0" Grid.Column="1"  >08:00 tot 17:00</Label>
                 <!--Dinsdag-->
                 <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"  >Dinsdag</Label>
-                <Label TextColor="White" FontSize="Large" Grid.Row="1" Grid.Column="1"  >08:00 tot 16:30</Label>
+                <Label x:Name="tdDinsdag" TextColor="White" FontSize="Large" Grid.Row="1" Grid.Column="1"  >08:00 tot 16:30</Label>
                 <!--Woensdag-->
                 <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="2" Grid.Column="0"  >Woensdag</Label>
-                <Label TextColor="White" FontSize="Large" Grid.Row="2" Grid.Column="1"  >08:00 tot 17:30</Label>
+                <Label x:Name="tdWoensdag" TextColor="White" FontSize="Large" Grid.Row="2" Grid.Column="1"  >08:00 tot 17:30</Label>
                 <!--Donderdag-->
                 <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="3" Grid.Column="0"  >Donderdag</Label>
-                <Label TextColor="White" FontSize="Large" Grid.Row="3" Grid.Column="1"  >08:00 tot 17:00</Label>
+                <Label x:Name="tdDonderdag" TextColor="White" FontSize="Large" Grid.Row="3" Grid.Column="1"  >08:00 tot 17:00</Label>
                 <!--Vrijdag-->
                 <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="4" Grid.Column="0"  >Vrijdag</Label>
-                <Label TextColor="White" FontSize="Large" Grid.Row="4" Grid.Column="1"  >08:00 tot 16:00</Label>
+                <Label x:Name="tdVrijdag" TextColor="White" FontSize="Large" Grid.Row="4" Grid.Column="1"  >08:00 tot 16:00</Label>
                 <!--Zaterdag-->
                 <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="5" Grid.Column="0"  >Zaterdag</Label>
-                <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="5" Grid.Column="1"  >Gesloten</Label>
+                <Label x:Name="tdZaterdag" TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="5" Grid.Column="1"  >Gesloten</Label>
                 <!--Zondag-->
                 <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="6" Grid.Column="0"  >Zondag</Label>
                 <Label TextColor="White" FontSize="Large" FontAttributes="Bold" Grid.Row="6" Grid.Column="1"  >Gesloten</Label>

@@ -12,6 +12,7 @@ namespace KW1C_Parking_App
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HomePage : ContentPage
 	{
+        
 		public HomePage ()
 		{
 			InitializeComponent();
@@ -26,6 +27,8 @@ namespace KW1C_Parking_App
         {
             //Resultaatscherm wordt geopend met de feedback data
             Navigation.PushModalAsync(new ZoekMijnAuto());
+
+            
         
         }
         private void OpenParkeerplaatsen(object sender, EventArgs e)
