@@ -5,8 +5,10 @@
              BackgroundColor="#1B84C5">
              
     <ContentPage.Content>
+        <!--homepagina met logo-->
         <StackLayout WidthRequest="400">
             <Image Source="KW1C.jpg" HeightRequest="250" WidthRequest="300"></Image>
+            <!--3 buttons voor openen van pagina-->
             <Button Text="Beschikbare Pakeerplaatsen" HeightRequest="60" WidthRequest="100" Clicked="OpenParkeerplaatsen"></Button>
             <Button Text="Zoek mijn auto" HeightRequest="60" WidthRequest="75" Clicked="OpenZoekAuto"></Button>
             <Button Text="Openingstijden" HeightRequest="60" WidthRequest="75" Clicked="OpenTijden"></Button>

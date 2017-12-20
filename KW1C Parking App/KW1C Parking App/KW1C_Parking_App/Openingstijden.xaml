@@ -6,13 +6,16 @@
     
     <ContentPage.Content>
         <StackLayout>
+            <!--logo-->
             <Image Source="KW1C.jpg" HeightRequest="200" WidthRequest="250"></Image>
+            <!--picker met de parkeerlocaties-->
             <Picker Title="Selecteer een locatie" x:Name="piLocatie" SelectedIndexChanged="grTijd_SelectedIndexChanged">
                 <Picker.Items>
                     <x:String>Onderwijsboulevard</x:String>
                     <x:String>Vlijmenseweg</x:String>
                 </Picker.Items>
             </Picker>
+            <!--tabel met de openingstijden-->
             <Grid Margin="10" x:Name="grTijd">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>

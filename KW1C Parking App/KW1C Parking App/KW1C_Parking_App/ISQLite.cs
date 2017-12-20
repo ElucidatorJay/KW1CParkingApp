@@ -7,7 +7,8 @@ namespace KW1C_Parking_App
 {
     public interface ISQLite
     {
-        //alleen deze method is specifiek per platform
+   
+        //ophalen van de connectiestring voor de sqlite database
         SQLiteConnection GetConnection();
     }
 }

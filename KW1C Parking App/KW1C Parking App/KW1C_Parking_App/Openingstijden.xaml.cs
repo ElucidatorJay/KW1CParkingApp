@@ -16,16 +16,21 @@ namespace KW1C_Parking_App
         public Openingstijden ()
 		{
 			InitializeComponent ();
+            //kleur van de picker
             piLocatie.TextColor = Color.White;
+            // visible van de tabel op false zetten
             grTijd.IsVisible = false;
         }
 
         private void grTijd_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //gekozen item ophalen uit picker
             Locatie = piLocatie.SelectedItem.ToString();
 
+            //controleren welk item er is gekozen
             if (Locatie == "Onderwijsboulevard")
             {
+                //tabel op visible zetten en tijd aanpassen
                 grTijd.IsVisible = true;
                 tdMaandag.Text = "08:00 tot 17:00";
                 tdDinsdag.Text = "08:00 tot 16:30";
@@ -36,6 +41,7 @@ namespace KW1C_Parking_App
             }
             if (Locatie == "Vlijmenseweg")
             {
+                //tabel op visible zetten en tijd aanpassen
                 grTijd.IsVisible = true;
                 tdMaandag.Text = "08:00 tot 17:30";
                 tdDinsdag.Text = "08:00 tot 18:00";

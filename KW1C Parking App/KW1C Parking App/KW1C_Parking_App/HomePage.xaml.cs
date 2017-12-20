@@ -19,13 +19,13 @@ namespace KW1C_Parking_App
 		}
         private void OpenTijden(object sender, EventArgs e)
         {
-            //Resultaatscherm wordt geopend met de feedback data
+            //navigatie naar pagina voor openingstijden
             Navigation.PushModalAsync(new Openingstijden());
             
         }
         private void OpenZoekAuto(object sender, EventArgs e)
         {
-            //Resultaatscherm wordt geopend met de feedback data
+            //navigatie naar pagina voor zoek mijn auto
             Navigation.PushModalAsync(new ZoekMijnAuto());
 
             
@@ -33,7 +33,7 @@ namespace KW1C_Parking_App
         }
         private void OpenParkeerplaatsen(object sender, EventArgs e)
         {
-            //Resultaatscherm wordt geopend met de feedback data
+            //navigatie naar pagina voor beschikbare parkeerplaatsen
             Navigation.PushModalAsync(new BeschikbarePakeerplaatsen());
 
         }

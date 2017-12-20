@@ -14,19 +14,13 @@ namespace KW1C_Parking_App
 
         public ZoekAutoDB()
         {
+            //ophalen van connectiestring
             dbconn = DependencyService.Get<ISQLite>().GetConnection();
-            // create the tables
+            // aanmaken van de tabel in database
             dbconn.CreateTable<clLocatie>();
         }
 
-        public IEnumerable<clLocatie> GetItems()
-        {
-            lock (locker)
-            {
-                return (from i in dbconn.Table<clLocatie>() select i).ToList();
-            }
-        }
-
+        //ophalen van de GPS locatie
         public clLocatie GetItem(int id)
         {
             lock (locker)
@@ -35,14 +29,8 @@ namespace KW1C_Parking_App
             }
         }
 
-        public int GetAantalTabel(string tabel)
-        {
-            lock (locker)
-            {
-                return dbconn.ExecuteScalar<int>("SELECT COUNT(*) FROM [" + tabel + "]");
-            }
-        }
 
+        //opslaan van de GPS locatie
         public int SaveItem(clLocatie item)
         {
             lock (locker)
@@ -60,6 +48,7 @@ namespace KW1C_Parking_App
             }
         }
 
+        //verwijderen van de GPS locatie
         public int DeleteItem(int id)
         {
             lock (locker)

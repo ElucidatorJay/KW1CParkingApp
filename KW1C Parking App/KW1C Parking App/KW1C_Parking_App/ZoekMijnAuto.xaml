@@ -4,14 +4,15 @@
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="KW1C_Parking_App.ZoekMijnAuto"
              BackgroundColor="#1B84C5">
-
+     
+    <!--grid voor de indeling van de pagina-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="450"></RowDefinition>
             <RowDefinition Height="3.333*"></RowDefinition>
             <RowDefinition Height="3.333*"></RowDefinition>
         </Grid.RowDefinitions>
-        <!--Google maps unit-->
+        <!--Google maps integratie-->
         <StackLayout Grid.Row="0" VerticalOptions="StartAndExpand" Padding="10">
             <maps:Map WidthRequest="330" HeightRequest="450"
          x:Name="MyMap"
@@ -21,7 +22,7 @@
          
        />
         </StackLayout>
-        <!--button-->
+        <!--buttons voor het opslaan en wissen van de locatie en labels waar de coordinaten op de achtergrond worden opgelsagen.-->
         <StackLayout Grid.Row="1">
             <Label x:Name="txtLat" Text="Latitude: " VerticalOptions="Center" HorizontalOptions="Center"></Label>
             <Label x:Name="txtLong" Text="Longitude: " VerticalOptions="Center" HorizontalOptions="Center"></Label>

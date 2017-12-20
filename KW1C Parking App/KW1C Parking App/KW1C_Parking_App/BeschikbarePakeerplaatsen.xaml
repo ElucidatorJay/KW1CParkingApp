@@ -6,15 +6,19 @@
     
     <ContentPage.Content>
         <StackLayout>
+            <!--logo-->
             <Image Source="KW1C.jpg" HeightRequest="200" WidthRequest="250"></Image>
+            <!--picker met items voor de pakeerlocatie-->
             <Picker Title="Selecteer een locatie"  x:Name="piLocatie" SelectedIndexChanged="piLocatie_SelectedIndexChanged">
                 <Picker.Items>
                     <x:String>Onderwijsboulevard</x:String>
                     <x:String>Vlijmenseweg</x:String>
                 </Picker.Items>
             </Picker>
+            <!--label voor het tonen van aantal beschikbare plekken-->
             <Label x:Name="lbAantal" TextColor="White" FontAttributes="Bold" FontSize = "120" Text="" HorizontalTextAlignment="Center"></Label>
             <Label x:Name="lbText" Text="Beschikbare parkeerplaatsen" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center"></Label>
+            <!--plaatje auto-->
             <Image x:Name="ftAuto" Source="transport.png" HeightRequest="225" WidthRequest="275"></Image>
         </StackLayout>
     </ContentPage.Content>

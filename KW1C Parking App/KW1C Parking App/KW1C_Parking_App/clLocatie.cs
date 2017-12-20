@@ -7,6 +7,7 @@ namespace KW1C_Parking_App
 {
    public class clLocatie
     {
+        //class voor de breedtegraad en lengtegraad van de GPS locatie deze wordt omgezet in een tabel met sqlite
         [PrimaryKey]
 
         public int ID { get; set; }
